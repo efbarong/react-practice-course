@@ -1,0 +1,91 @@
+.counter {
+    padding: 20px 30px;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    color: rgba(54, 77, 142, 0.829);
+    gap: 1rem;
+    box-shadow: 0px 5px 10px 2px rgba(175, 204, 255, 0.41);
+}
+
+.counter__title {
+    text-align: center;
+    margin: 0;
+    letter-spacing: 5px;
+    text-shadow:
+        0 0 10px rgba(15, 109, 171, 0.5)
+}
+
+.counter__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.counter__value {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.counter__btn {
+    cursor: pointer;
+    border-radius: 50rem;
+    border: 0;
+    box-shadow: 2px 5px 4px 1px rgba(15, 109, 171, 0.358), inset 1px 5px 10px 1px rgba(19, 50, 111, 0.261);
+    padding: 8px;
+    height: 3rem;
+    width: 3rem;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.counter__btn:active {
+    box-shadow: 1px 1px 5px 1px rgba(15, 109, 171, 0.358), inset 1px 1px 5px rgba(19, 50, 111, 0.261);
+}
+
+.counter__btn:hover:not(:active) {
+    box-shadow: 2px 5px 6px 2px rgba(15, 109, 171, 0.358), inset 1px 5px 12px 1px rgba(19, 50, 111, 0.261);
+}
+
+.counter__btn:focus {
+    outline: rgba(197, 197, 197, 0.268) solid 2px;
+}
+
+@media (max-width: 400px) {
+
+    .counter {
+        min-width: 200px;
+    }
+
+    .counter__title {
+        letter-spacing: 0;
+    }
+
+    .counter__buttons {
+        gap: 0.5rem 1rem;
+        flex-wrap: wrap;
+    }
+
+    .counter__buttons :nth-child(1) {
+        order: 2;
+    }
+
+    .counter__buttons :nth-child(2) {
+        order: 1;
+        width: 100%;
+        text-align: center;
+    }
+
+    .counter__buttons :nth-child(3) {
+        order: 3;
+    }
+
+    .counter__btn {
+        height: 2rem;
+        width: 2rem;
+        font-size: 1rem;
+    }
+}
