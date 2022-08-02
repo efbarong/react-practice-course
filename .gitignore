@@ -14,6 +14,7 @@ dist-ssr
 .yarn
 .pnp.cjs
 .pnp.loader.mjs
+build
 
 # Editor directories and files
 .vscode/*
